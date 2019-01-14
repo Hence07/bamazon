@@ -14,3 +14,7 @@ Screenshot Displaying Items Available
 Selecting an items from the list of Items you would like to purchase.
 
 ![screen shot 2019-01-14 at 7 05 50 am](https://user-images.githubusercontent.com/13372822/51111748-0c14cb00-17cb-11e9-96e1-ba6f1f2e2ccb.png)
+
+Taking user inputs
+
+![screen shot 2019-01-14 at 7 20 38 am](https://user-images.githubusercontent.com/13372822/51112563-09b37080-17cd-11e9-95ac-e9c4898cb6af.png)
