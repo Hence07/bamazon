@@ -44,8 +44,49 @@ head: ["item_id", "product_name", "department_name", "price", "stock_quantity"]
         for (var i = 0; i , res.length; i++){
             table.push([res[i].item_id, res[i].product_name, res[i].department_name, res[i].price.toFixe(2), res[i].stock_quantity]);
         }
-    });
-}
+
+        // Let's output table and item_id that users would like to buy
+        console.log(table.toString());
+        inquirer.prompt([{
+            name: "item_id",
+            type: "input",
+            message: "Select an item ID you would like to purchase!",
+            validate: function (value) {
+                if (isNaN(value) == false) {
+                    return true;
+                } else {
+                    return false;
+                }
+            }
+        }, {
+            name: "Quantity",
+            type: "input",
+            message: "How many of this item would you like to buy?",
+            validate: function (value) {
+                if (isNaN(value) == false) {
+                    return true;
+                } else {
+                    return false;
+                }
+            }
+        }]).then(function (answer) {
+        // when finished prompting, insert a new item into the db with that info
+
+        
+        
+        })
+        })
+        }
+        
+
+
+
+
+
+
+    //});
+//}
+//Products();
 //function to display all items 
 /*function Products(product_name, department_name, stock_quantity, price){   
     this.product_name = product_name;
